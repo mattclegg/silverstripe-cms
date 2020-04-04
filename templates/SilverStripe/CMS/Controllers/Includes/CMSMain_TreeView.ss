@@ -7,7 +7,7 @@
 $ExtraTreeTools
 
 <% if $TreeIsFiltered %>
-    <div class="cms-tree-filtered cms-notice flexbox-area-grow">
+	<div class="cms-tree-filtered cms-notice flexbox-area-grow">
 		<strong><%t SilverStripe\CMS\Controllers\CMSMain.TreeFiltered 'Showing search results.' %></strong>
 		<a href="javascript:void(0)" class="clear-filter">
 			<%t SilverStripe\CMS\Controllers\CMSMain.TreeFilteredClear 'Clear' %>
@@ -26,10 +26,10 @@ $ExtraTreeTools
 			data-childfilter="$Link('childfilter').ATT"
 			data-extra-params="SecurityID=$SecurityID.ATT">
 			$SiteTreeAsUL
-        </div>
-    </div>
+		</div>
+	</div>
 <% else %>
-    <div class="cms-tree flexbox-area-grow <% if $TreeIsFiltered %>filtered-list<% end_if %>"
+	<div class="cms-tree flexbox-area-grow <% if $TreeIsFiltered %>filtered-list<% end_if %>"
 		data-url-tree="$LinkWithSearch($Link('getsubtree')).ATT"
 		data-url-savetreenode="$Link('savetreenode').ATT"
 		data-url-updatetreenodes="$Link('updatetreenodes').ATT"

@@ -1,3 +1,3 @@
 <div class="$Classes">
-    $Content
+	$Content
 </div>
